@@ -1,0 +1,9 @@
+{
+  "orgs": {
+    "example-org": {
+      "repos": ["*"],
+      "secretsProfile": "default",
+      "workflowProfile": "standard-ci"
+    }
+  }
+}
