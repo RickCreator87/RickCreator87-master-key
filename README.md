@@ -1,3 +1,10 @@
+> **❤️ Support my work:**  
+> GitHub Sponsors → https://github.com/sponsors/RickCreator87  
+> Buy Me a Coffee → https://www.buymeacoffee.com/rickcreator87
+
+
+
+
 <!-- MASTER KEY BADGE WALL -->
 
 <p align="center">
@@ -34,6 +41,22 @@
 
 </p>
 `
+
+> **❤️ Support my work:**  
+> GitHub Sponsors → https://github.com/sponsors/RickCreator87  
+> Buy Me a Coffee → https://www.buymeacoffee.com/rickcreator87
+
+
+## ❤️ Support This Project
+
+If you find this project valuable, consider supporting my work:
+
+- **GitHub Sponsors:** https://github.com/sponsors/RickCreator87  
+- **Buy Me a Coffee:** https://www.buymeacoffee.com/rickcreator87  
+
+Your support helps fund open‑source automation, governance tooling, and
+developer‑first infrastructure across the GitDigital ecosystem.
+
 
 
 # RickCreator87-master-key
