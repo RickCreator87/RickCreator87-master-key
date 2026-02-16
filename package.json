@@ -1,0 +1,25 @@
+📄 package.json
+`json
+{
+  "name": "rickcreator87-master-key",
+  "version": "1.0.0",
+  "description": "Central orchestrator GitHub App for the GitDigital ecosystem.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@octokit/app": "^14.0.0",
+    "@octokit/webhooks": "^12.0.0",
+    "express": "^4.18.2",
+    "dotenv": "^16.0.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^3.0.0"
+  }
+}
+`
