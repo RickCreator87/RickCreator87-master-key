@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>API · RickCreator87 Master Key</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="API and integration details for the RickCreator87 Master Key repository."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">RickCreator87 Master Key</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="docs.html">Docs</a>
+        <a href="api.html" class="active">API</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/RickCreator87/RickCreator87-master-key" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container docs">
+    <h2>API & Integration Surface</h2>
+    <p>
+      Use this page to describe how other systems interact with this repo: scripts, webhooks,
+      GitHub Apps, or external services.
+    </p>
+
+    <h3>1. Entry points</h3>
+    <ul>
+      <li><strong>CLI scripts:</strong> e.g., <code>scripts/bootstrap.sh</code>, <code>scripts/rotate-keys.js</code></li>
+      <li><strong>GitHub Actions:</strong> workflows that consume configuration from this repo.</li>
+      <li><strong>Webhooks / APIs:</strong> any external endpoints that read from or write to this repo.</li>
+    </ul>
+
+    <h3>2. Example workflow</h3>
+    <pre><code>name: Master Key Sync
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run sync script
+        run: |
+          ./scripts/sync-master-key.sh
+</code></pre>
+
+    <h3>3. Data contracts</h3>
+    <p>
+      Document any JSON/YAML schemas, expected fields, and validation rules that define how
+      other systems consume this repo’s data.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> RickCreator87 ·
+        <a href="https://github.com/RickCreator87" target="_blank" rel="noopener">GitHub profile</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
