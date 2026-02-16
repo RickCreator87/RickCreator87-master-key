@@ -1,0 +1,41 @@
+📄 config/app.yml
+This defines the GitHub App metadata exactly as GitHub expects it.
+
+`yaml
+
+GitHub App configuration for RickCreator87 Master Key
+
+name: "RickCreator87 Master Key"
+description: "Central orchestrator GitHub App for multi-org automation, governance, and AI-driven operations."
+url: "https://github.com/RickCreator87"
+hook_attributes:
+  url: "https://your-master-key-app.com/webhooks"
+
+redirect_url: "https://your-master-key-app.com/login"
+
+callback_urls:
+  - "https://your-master-key-app.com/auth/callback"
+
+setup_url: "https://your-master-key-app.com/setup"
+setuponupdate: true
+
+default_permissions:
+  contents: read
+  metadata: read
+
+default_events:
+  - push
+  - pull_request
+  - issues
+  - issue_comment
+  - repository
+  - organization
+  - installation
+  - installation_repositories
+  - workflow_run
+  - check_suite
+  - check_run
+
+public: false
+`
+
