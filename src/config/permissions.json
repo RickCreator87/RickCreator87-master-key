@@ -1,0 +1,13 @@
+{
+  "orgs": {
+    "example-org": {
+      "governanceLevel": "strict",
+      "allowedActions": [
+        "enforce-branch-protection",
+        "manage-secrets",
+        "enforce-workflows"
+      ],
+      "requiredFiles": ["README.md", "LICENSE", "SECURITY.md"]
+    }
+  }
+}
