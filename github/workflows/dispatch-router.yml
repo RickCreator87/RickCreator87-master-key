@@ -1,0 +1,33 @@
+📄 .github/workflows/dispatch-router.yml
+`yaml
+name: Dispatch Router
+
+on:
+  repository_dispatch:
+    types: [ai-task, governance-check, repo-scan]
+
+jobs:
+  route:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run router
+        env:
+          APPID: ${{ secrets.APPID }}
+          PRIVATEKEY: ${{ secrets.PRIVATEKEY }}
+          WEBHOOKSECRET: ${{ secrets.WEBHOOKSECRET }}
+        run: node src/router.js
+`
+
+
