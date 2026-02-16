@@ -1,0 +1,26 @@
+📄 .github/workflows/security-scan.yml
+`yaml
+name: Security Scan
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run CodeQL Init
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      - name: Run CodeQL Analyze
+        uses: github/codeql-action/analyze@v3
+`
+
