@@ -1,0 +1,26 @@
+{
+  "name": "rickcreator87-master-key",
+  "version": "1.0.0",
+  "description": "RickCreator87 Master Key - Central orchestrator GitHub App for multi-org automation",
+  "main": "app.py",
+  "scripts": {
+    "dev": "uvicorn app:app --reload",
+    "start": "uvicorn app:app --host 0.0.0.0 --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickCreator87/RickCreator87-master-key.git"
+  },
+  "keywords": [
+    "github-app",
+    "automation",
+    "fastapi",
+    "vercel-analytics"
+  ],
+  "author": "Richard Duane Kindler (RickCreator87)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RickCreator87/RickCreator87-master-key/issues"
+  },
+  "homepage": "https://github.com/RickCreator87/RickCreator87-master-key#readme"
+}
