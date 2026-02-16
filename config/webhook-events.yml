@@ -1,0 +1,20 @@
+📄 config/webhook-events.yml
+This file explicitly lists every webhook event the Master‑Key app listens to and how they are routed internally.
+
+`yaml
+webhooks:
+  push: handlers/push.js
+  pullrequest: handlers/pullrequest.js
+  issues: handlers/issues.js
+  issuecomment: handlers/issuecomment.js
+  repository: handlers/repository.js
+  organization: handlers/organization.js
+  installation: handlers/installation.js
+  installationrepositories: handlers/installationrepositories.js
+  workflowrun: handlers/workflowrun.js
+  checksuite: handlers/checksuite.js
+  checkrun: handlers/checkrun.js
+  membership: handlers/membership.js
+`
+
+
