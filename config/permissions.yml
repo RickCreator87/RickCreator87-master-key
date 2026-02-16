@@ -1,0 +1,49 @@
+📄 config/permissions.yml
+This file defines the full permission matrix for the Master‑Key app. It is intentionally broad because this app is the orchestrator.
+
+`yaml
+permissions:
+  actions: write
+  administration: write
+  checks: write
+  contents: write
+  deployments: write
+  issues: write
+  metadata: read
+  organization_administration: write
+  organization_hooks: write
+  organization_packages: write
+  organization_plan: read
+  organization_projects: write
+  organization_secrets: write
+  packages: write
+  pages: write
+  pull_requests: write
+  repository_hooks: write
+  repository_projects: write
+  secretscanningalerts: write
+  security_events: write
+  statuses: write
+  workflows: write
+
+events:
+  - push
+  - pull_request
+  - issues
+  - issue_comment
+  - repository
+  - organization
+  - installation
+  - installation_repositories
+  - workflow_run
+  - check_suite
+  - check_run
+  - member
+  - team_add
+  - create
+  - delete
+  - fork
+  - public
+  - release
+`
+
