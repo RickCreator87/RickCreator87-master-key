@@ -6,8 +6,9 @@ import fs from "fs";
 import path from "path";
 import logger from "../../utils/logger.js";
 
-const promptPath = path.join(process.cwd(), "src", "ai", "prompts", "governance_validator.md");
-const systemPrompt = fs.readFileSync(promptPath, "utf8");
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const promptPath = path.join(__dirname, "..", "prompts", "governance_validator.md");
 
 export default async function governanceValidator(taskType, context) {
   logger.info(Governance Validator checking: ${taskType});
