@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Docs · RickCreator87 Master Key</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Documentation for installing, configuring, and using the RickCreator87 Master Key repository."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">RickCreator87 Master Key</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="docs.html" class="active">Docs</a>
+        <a href="api.html">API</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/RickCreator87/RickCreator87-master-key" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container docs">
+    <h2>Documentation</h2>
+
+    <h3>1. Overview</h3>
+    <p>
+      Use this page to explain what lives in this repository: configuration files, workflows,
+      secrets templates, schemas, or orchestration scripts.
+    </p>
+
+    <h3>2. Repository structure</h3>
+    <pre><code>.
+├── README.md
+├── /config
+├── /workflows
+├── /scripts
+└── /docs
+</code></pre>
+    <p>Edit the tree above to match your actual layout.</p>
+
+    <h3>3. Getting started</h3>
+    <ol>
+      <li><strong>Clone the repo:</strong></li>
+    </ol>
+    <pre><code>git clone https://github.com/RickCreator87/RickCreator87-master-key.git
+cd RickCreator87-master-key
+</code></pre>
+
+    <ol start="2">
+      <li><strong>Install dependencies:</strong> Document any language/runtime and package manager here.</li>
+      <li><strong>Configure environment:</strong> Point to your secrets templates, .env examples, or key management docs.</li>
+    </ol>
+
+    <h3>4. Workflows</h3>
+    <p>
+      Describe how CI/CD, GitHub Apps, or automation scripts use this repo as a master key.
+      Include diagrams or sequence descriptions if helpful.
+    </p>
+
+    <h3>5. Security considerations</h3>
+    <ul>
+      <li><strong>Access control:</strong> Who should have read/write access?</li>
+      <li><strong>Secret handling:</strong> Where are real secrets stored (never in Git)?</li>
+      <li><strong>Rotation strategy:</strong> How often and how is rotation performed?</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> RickCreator87 ·
+        <a href="https://github.com/RickCreator87" target="_blank" rel="noopener">GitHub profile</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
