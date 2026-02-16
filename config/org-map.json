@@ -1,0 +1,31 @@
+📄 config/org-map.json
+This file defines the multi‑org routing map for your entire ecosystem.  
+The Master‑Key uses this to know which orgs exist, what their roles are, and how to route tasks.
+
+`json
+{
+  "organizations": {
+    "GitDigital-Products": {
+      "role": "product",
+      "ai_profile": "repoGuardian",
+      "priority": 1
+    },
+    "GitDigital-Solana": {
+      "role": "solana",
+      "ai_profile": "governanceValidator",
+      "priority": 2
+    },
+    "OpenGrantStack": {
+      "role": "grants",
+      "ai_profile": "workflowAdvisor",
+      "priority": 3
+    },
+    "GitDigital-Credit-Agency": {
+      "role": "credit",
+      "ai_profile": "orchestrator",
+      "priority": 4
+    }
+  }
+}
+`
+
